@@ -40,9 +40,9 @@ Features
     * Linear
     * Dense
 * Optimizers
-    *to be added
+    * to be added
 * Objectives
-    *to be added  
+    * to be added  
     
 
 Updates
