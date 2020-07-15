@@ -6,7 +6,8 @@
     
     
     
-# Xeno
+Xeno:Deep learning library from Scratch.
+============
 
 Scalable deep learning library built from scratch. Purely based on NumPy.
 
