@@ -1,6 +1,4 @@
-.. image:: https://img.shields.io/badge/license-MIT-blue.svg
-    :target: https://github.com/oujago/NumpyDL/blob/master/LICENSE
-    
+   
 # Xeno
 
 Scalable deep learning library built from scratch. Purely based on NumPy.
