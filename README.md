@@ -1,4 +1,4 @@
-# xeno
+# Xeno
 
 Scalable deep learning library built from scratch. Purely based on NumPy.
 
