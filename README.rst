@@ -24,6 +24,7 @@ Descriptions
 Features
 ============
 ``Xeno`` contains following dee learning features, currently:
+
 * Activations
     * Sigmoid
     * Tanh
@@ -33,7 +34,8 @@ Features
     * Elliot
     * SymmetricElliot
     * SoftPlus
-    * SoftSign
+    * SoftSign 
+    
 * Initializations
     * Zero
     * One
