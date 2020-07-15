@@ -2,7 +2,8 @@
     :target: https://github.com/manncodes/xeno/blob/master/LICENSE
     
 .. image:: https://img.shields.io/badge/python-3.6-blue.svg
-    :target: https://pypi.python.org/pypi/npdl
+    :target: https://pypi.python.org/pypi/npd  
+    
     
     
 # Xeno
