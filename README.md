@@ -9,7 +9,7 @@ Descriptions
 
 ``Xeno`` is:
 
-1. Based on Pure Numpy/Python
+1. Based on pure Numpy/Python.
 2. Just a midnight curiosity forming real shape.
 
 Updates
