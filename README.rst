@@ -1,4 +1,10 @@
-   
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg
+    :target: https://github.com/manncodes/xeno/blob/master/LICENSE
+    
+.. image:: https://img.shields.io/badge/python-3.6-blue.svg
+    :target: https://pypi.python.org/pypi/npdl
+    
+    
 # Xeno
 
 Scalable deep learning library built from scratch. Purely based on NumPy.
