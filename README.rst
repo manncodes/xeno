@@ -50,6 +50,7 @@ Features
 * Layers
     * Linear
     * Dense
+    *Convolution
 * Objectives
     * Objectives
     * MeanSquaredError
