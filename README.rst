@@ -1,10 +1,15 @@
-.. image:: https://img.shields.io/badge/license-MIT-blue.svg
-    :target: https://github.com/manncodes/xeno/blob/master/LICENSE
-    
-.. image:: https://img.shields.io/badge/python-3.6-blue.svg
-    :target: https://pypi.python.org/pypi/npd  
-    
-    
+.. image:: https://img.shields.io/badge/Maintained%3F-yes-green.svg  
+   :target: https://GitHub.com/manncodes/xeno/graphs/commit-activity  
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg  
+    :target: https://github.com/manncodes/xeno/blob/master/LICENSE   
+.. image:: https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg    
+   :target: mailto:manncodes@gmail.com   
+.. image:: https://img.shields.io/github/issues/manncodes/xeno.svg  
+   :target: https://GitHub.com/manncodes/xeno/issues/   
+.. image:: http://hits.dwyl.io/manncodes/badges.svg  
+   :target: http://hits.dwyl.io/manncodes/xeno  
+   
+  
     
 Xeno:Deep learning library from Scratch.
 ============
@@ -79,7 +84,10 @@ Features
 
 
 
-One simple code example:
+One simple code example: 
+
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+   :target: https://colab.research.google.com/github.com/manncodes/xeno/blob/master/XenoDemoInColab.ipynb
 
 .. code-block:: python
 
