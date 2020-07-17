@@ -66,6 +66,4 @@ Features
     * Adam
     * Adamax
 
-Updates
-============
 
