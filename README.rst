@@ -34,8 +34,7 @@ Features
     * Elliot
     * SymmetricElliot
     * SoftPlus
-    * SoftSign 
-    
+    * SoftSign     
 * Initializations
     * Zero
     * One
@@ -51,6 +50,17 @@ Features
     * Linear
     * Dense
     * Convolution
+    * Softmax
+    * Dropout
+    * Embedding
+    * BatchNormal
+    * MeanPooling
+    * MaxPooling
+    * SimpleRNN
+    * GRU
+    * LSTM
+    * Flatten
+    * DimShuffle 
 * Objectives
     * Objectives
     * MeanSquaredError
@@ -65,6 +75,33 @@ Features
     * RMSprop
     * Adadelta
     * Adam
-    * Adamax
+    * Adamax 
 
 
+
+One concrete code example:
+
+.. code-block:: python
+
+    import numpy as np
+    from sklearn.datasets import load_digits
+    import xeno
+
+    # prepare
+    xeno.utils.random.set_seed(1234)
+
+    # data
+    digits = load_digits()
+    X_train = digits.data
+    X_train /= np.max(X_train)
+    Y_train = digits.target
+    n_classes = np.unique(Y_train).size
+
+    # model
+    model = xeno.model.Model()
+    model.add(xeno.layers.Dense(n_out=500, n_in=64, activation=xeno.activation.ReLU()))
+    model.add(xeno.layers.Dense(n_out=n_classes, activation=xeno.activation.Softmax()))
+    model.compile(loss=xeno.objectives.SCCE(), optimizer=xeno.optimizers.SGD(lr=0.005))
+
+    # train
+    model.fit(X_train, xeno.utils.data.one_hot(Y_train), max_iter=150, validation_split=0.1)
