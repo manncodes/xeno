@@ -6,9 +6,9 @@
    :target: mailto:manncodes@gmail.com   
 .. image:: https://img.shields.io/github/issues/manncodes/xeno.svg  
    :target: https://GitHub.com/manncodes/xeno/issues/   
-.. image:: http://hits.dwyl.io/manncodes/badges.svg  
-   :target: http://hits.dwyl.io/manncodes/xeno  
-   
+.. image:: https://hitsofcode.com/github/manncodes/xeno
+   :target: https://hitsofcode.com/view/github/manncodes/xeno  
+
   
     
 Xeno:Deep learning library from Scratch.
