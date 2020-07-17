@@ -50,11 +50,21 @@ Features
 * Layers
     * Linear
     * Dense
-* Optimizers
-    * to be added
 * Objectives
-    * to be added  
-    
+    * Objectives
+    * MeanSquaredError
+    * HellingerDistance
+    * BinaryCrossEntropy
+    * SoftmaxCategoricalCrossEntropy 
+* Optimizers
+    * SGD
+    * Momentum
+    * NesterovMomentum
+    * Adagrad
+    * RMSprop
+    * Adadelta
+    * Adam
+    * Adamax
 
 Updates
 ============
