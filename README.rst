@@ -99,8 +99,8 @@ One simple code example:
 
     # model
     model = xeno.model.Model()
-    model.add(xeno.layers.Dense(n_out=500, n_in=64, activation=xeno.activation.ReLU()))
-    model.add(xeno.layers.Dense(n_out=n_classes, activation=xeno.activation.Softmax()))
+    model.add(xeno.layers.Dense(n_out=500, n_in=64, activation=xeno.activations.ReLU()))
+    model.add(xeno.layers.Dense(n_out=n_classes, activation=xeno.activations.Softmax()))
     model.compile(loss=xeno.objectives.SCCE(), optimizer=xeno.optimizers.SGD(lr=0.005))
 
     # train
