@@ -79,7 +79,7 @@ Features
 
 
 
-One concrete code example:
+One simple code example:
 
 .. code-block:: python
 
