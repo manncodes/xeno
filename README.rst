@@ -116,7 +116,8 @@ One simple code example:
     
 
 
-Another example of an LSTM sentence classifier in xeno:
+Another example of an LSTM sentence classifier in xeno: 
+
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/manncodes/xeno/blob/master/XenoDemoInColab.ipynb
 
