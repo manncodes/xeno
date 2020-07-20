@@ -25,6 +25,7 @@ Descriptions
 
 1. Based on pure Numpy/Python.
 2. Just a midnight curiosity forming real shape.
+3. Supports linear stacking of layers.
 
 Features
 ============
