@@ -95,7 +95,7 @@ def decompose_size(size):
         fan_in = size[0]
         fan_out = size[1]
 
-    elif len(size) == 4 or len(size) == 5:
+    elif len(size) in [4, 5]:
         respective_field_size = np.prod(size[2:])
         fan_in = size[1] * respective_field_size
         fan_out = size[0] * respective_field_size

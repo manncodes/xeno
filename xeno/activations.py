@@ -59,7 +59,7 @@ class ReLU(Activation):
         return np.maximum(0.0, input)
 
     def derivative(self, input=None):
-        last_forward = input if input else self.last_forward
+        last_forward = input or self.last_forward
         res = np.zeros(last_forward.shape, dtype=get_dtype())
         res[last_forward > 0] = 1.
         return res
@@ -76,7 +76,7 @@ class Linear(Activation):
         return input
 
     def derivative(self, input=None):
-        last_forward = input if input else self.last_forward
+        last_forward = input or self.last_forward
         return np.ones(last_forward.shape, dtype=get_dtype())
 
 
@@ -93,11 +93,10 @@ class Softmax(Activation):
         self.last_forward = input
         x = input - np.max(input, axis=1, keepdims=True)
         exp_x = np.exp(x)
-        s = exp_x / np.sum(exp_x, axis=1, keepdims=True)
-        return s
+        return exp_x / np.sum(exp_x, axis=1, keepdims=True)
 
     def derivative(self, input=None):
-        last_forward = input if input else self.last_forward
+        last_forward = input or self.last_forward
         return np.ones(last_forward.shape, dtype=get_dtype())
 
 
