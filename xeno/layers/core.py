@@ -86,8 +86,7 @@ class Dense(Layer):
         
         self.last_input = input
         linear_out = np.dot(input, self.W) + self.b
-        act_out = self.act_layer.forward(linear_out)
-        return act_out
+        return self.act_layer.forward(linear_out)
 
     def backward(self, pre_grad, *args, **kwargs):
         
@@ -128,11 +127,10 @@ class Dropout(Layer):
     def forward(self, input, train=True, *args, **kwargs):
         
         if 0. < self.p < 1.:
-            if train:
-                self.last_mask = get_rng().binomial(1, 1 - self.p, input.shape) / (1 - self.p)
-                return input * self.last_mask
-            else:
+            if not train:
                 return input * (1 - self.p)
+            self.last_mask = get_rng().binomial(1, 1 - self.p, input.shape) / (1 - self.p)
+            return input * self.last_mask
         else:
             return input
 

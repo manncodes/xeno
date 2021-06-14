@@ -92,10 +92,7 @@ class BatchNormal(Layer):
         dmu = -1 * np.sum(dxmu1 + dxmu2, axis=0)
         dx2 = 1. / N * np.ones((N, D)) * dmu
 
-        # step0 done!
-        dx = dx1 + dx2
-
-        return dx
+        return dx1 + dx2
 
     @property
     def params(self):

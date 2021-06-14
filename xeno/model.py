@@ -64,10 +64,7 @@ class Model(object):
         else:
             valid_X, valid_Y = None, None
 
-        iter_idx = 0
-        while iter_idx < max_iter:
-            iter_idx += 1
-
+        for iter_idx in range(1, max_iter + 1):
             # shuffle
             if shuffle:
                 seed = get_rng().randint(111, 1111111)
@@ -142,8 +139,7 @@ class Model(object):
         x_next = X
         for layer in self.layers[:]:
             x_next = layer.forward(x_next)
-        y_pred = x_next
-        return y_pred
+        return x_next
 
     def accuracy(self, outputs, targets):
         y_predicts = np.argmax(outputs, axis=1)
