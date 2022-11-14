@@ -42,7 +42,8 @@ setup(
     keywords="deep learning library",
     license='MIT',
     author='Mann Patel',
-    packages=find_packages(),
+    package_dir={'':"src"},
+    packages=find_packages("src"),
     author_email='manncodes@gmail.com',
     download_url="https://github.com/manncodes/xeno",
     include_dirs=[np.get_include()],
@@ -51,5 +52,6 @@ setup(
         "test": ['pytest', 'coverage', 'python-coveralls', ],
         'doc': ['sphinx', 'numpydoc', 'jinjia2', 'sphinx_rtd_theme'],
         'example': ['scikit-learn', 'flask'],
+
     }
 )

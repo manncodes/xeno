@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xeno-manncodes"
+version = "0.0.1"
+authors = [
+  { name="Manncodes", email="manncodes@gmail.com" },
+]
+description = "Scalable deep learning library built from scratch. Purely based on NumPy."
+readme = "README.rst"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy>=1.16"
+    "scikit_learn>=1.1.3"
+    "setuptools>=58.2"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/manncodes/xeno"
+"Bug Tracker" = "https://github.com/manncodes/xeno/issues"
